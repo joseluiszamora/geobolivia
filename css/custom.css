@@ -18,11 +18,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 #home{
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 #nav-header{
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.2);
   min-height: 70px;
   position: fixed;
   text-align: center;
@@ -51,14 +52,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .midground {
   background: url(../images/midground.png) repeat 20% 20%;
-  position: absolute;
+  position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: -300;
 }
 
 .foreground {
   background: url(../images/foreground.png) repeat 90% 110%;
-  position: absolute;
+  position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: -200;
 }
@@ -129,12 +130,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   text-transform: uppercase;
 }
 
-.bor {
+/*.bor {
   background: none repeat scroll 0 0 #ccc;
   height: 3px;
   margin: 5px auto 30px;
   width: 70px;
-}
+}*/
 .form-control{
   box-shadow: none;
   margin: 0 0 20px 0;
@@ -142,7 +143,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .white{
   background-color: #fff;
 }
+
+/* SECTION NAV HEADER */
+.scrollLink.selected{
+  color: #72C02C !important;
+}
+
 /* SECTION VIEWER */
+#viewer{
+  background-color: #FFFFFF;
+}
+
 #viewer .element h2 {
   font-size: 20px;
   font-weight: 600;
@@ -190,7 +201,62 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 1px solid #000;
 }
 
-/* SECTION VIEWER */
+/* SECTION INSTITUTION */
+#institution{
+  background-color: #FFFFFF;
+}
+
+/* SECTION COURSES */
+#courses{
+  background-color: #FFFFFF;
+}
+
+/* SECTION INFO */
+#info{
+  background-color: #FFFFFF;
+}
+#info .sectionTitle{
+  color: #ffffff;
+}
+
+.infosection .inner-info {
+  background: none repeat scroll 0 0 #FFFFFF;
+  padding: 10px 20px;
+  text-align: center;
+}
+.infosection .inner-info small {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+.color-green {
+  color: #72C02C;
+}
+
+/* SECTION SERVICES */
+#services{
+  background-color: #FFFFFF;
+}
+#services .title-box-v2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+#services h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+/* SECTION CONTACT */
 #contact{
   background: url(../images/white.png);
+}
+
+
+
+
+body{
+  overflow: hidden;
+}
+.wrapper{
+  overflow: auto;
 }

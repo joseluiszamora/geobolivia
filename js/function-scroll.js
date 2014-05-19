@@ -1,6 +1,6 @@
 $(function(){
   // PARALLAX EFECTS
-  $('.scroll-link').on('click', function(event){
+  $('.scrollLink').on('click', function(event){
     event.preventDefault();
     var sectionID = $(this).attr("data-id");
     scrollToID('#' + sectionID, 750);

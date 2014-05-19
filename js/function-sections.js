@@ -9,8 +9,8 @@ $(function(){
 });
 
 function resizeContainers(){
-  $('.main-content section').css("width", $(window).width()+"px");
-  $('.main-content section').css("height", $(window).height()+"px");  
+  $('.main-content section').css("min-width", $(window).width()+"px");
+  $('.main-content section').css("min-height", $(window).height()+"px");  
 }
 
 function centerHome(){
